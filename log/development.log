@@ -30,3 +30,41 @@ Migrating to CreateArticles (20230108222608)
   [1m[36mArticle Create (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "content", "slug", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", nil], ["content", nil], ["slug", nil], ["created_at", "2023-01-08 22:29:47.296476"], ["updated_at", "2023-01-08 22:29:47.296476"]]
   [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mArticle Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+Started GET "/" for 127.0.0.1 at 2023-01-10 14:59:18 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.4ms | Allocations: 665)
+Completed 200 OK in 31ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 5338)
+
+
+Started GET "/article" for 127.0.0.1 at 2023-01-10 14:59:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/article"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-01-10 14:59:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2023-01-10 14:59:32 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.0ms | Allocations: 451)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 1103)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-10 15:11:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.3ms | Allocations: 665)
+Completed 200 OK in 28ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5337)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-10 15:11:14 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.4ms | Allocations: 451)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 1149)
+
+
