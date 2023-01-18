@@ -517,3 +517,32 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 856)
 
 
+Started GET "/articles/" for 127.0.0.1 at 2023-01-18 13:22:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms | Allocations: 21232)
+
+
+  
+NameError (undefined local variable or method `serializer' for #<ArticlesController:0x00000000009240>
+Did you mean?  serizlizer):
+  
+app/controllers/ArticlesController.rb:4:in `index'
+Started GET "/articles/" for 127.0.0.1 at 2023-01-18 13:23:21 +0000
+Processing by ArticlesController#index as */*
+Completed 500 Internal Server Error in 17ms (Allocations: 2477)
+
+
+  
+NameError (undefined local variable or method `serializer' for #<ArticlesController:0x0000000000c800>
+Did you mean?  serizlizer):
+  
+app/controllers/ArticlesController.rb:4:in `index'
+Started GET "/articles/" for 127.0.0.1 at 2023-01-18 13:24:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/ArticlesController.rb:4:in `index'
+Completed 200 OK in 48ms (Views: 22.9ms | ActiveRecord: 1.4ms | Allocations: 36514)
+
+
