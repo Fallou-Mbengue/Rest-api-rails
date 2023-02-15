@@ -581,3 +581,36 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 827)
 
 
+Started GET "/" for 127.0.0.1 at 2023-02-13 09:27:42 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/pro/.rvm/rubies/ruby-2.7.2/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.2ms | Allocations: 665)
+Completed 200 OK in 25ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 5336)
+
+
+Started GET "//articles" for 127.0.0.1 at 2023-02-13 09:27:51 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/ArticlesController.rb:4:in `index'
+Completed 200 OK in 51ms (Views: 34.3ms | ActiveRecord: 1.6ms | Allocations: 17794)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-13 09:27:51 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/articles" for 127.0.0.1 at 2023-02-13 09:28:04 +0000
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/controllers/ArticlesController.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 826)
+
+
+Started GET "/articles/" for 127.0.0.1 at 2023-02-13 10:18:52 +0000
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+  ↳ app/controllers/ArticlesController.rb:4:in `index'
+Completed 200 OK in 67ms (Views: 41.0ms | ActiveRecord: 3.5ms | Allocations: 3182)
+
+
