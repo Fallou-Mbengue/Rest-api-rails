@@ -54,7 +54,7 @@ RSpec.describe ArticlesController, type: :controller do
 
     subject {get "/articles/#{article.id}"}
 
-    before {sublect}
+    before {subject}
 
     it "returns a success response" do
       expect(response).to  have_http_status(:ok)
